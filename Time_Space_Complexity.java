@@ -8,3 +8,4 @@ Some other examples for O(n^2)=5n^2+7n+2, 3n^2+2n, n^2/100
 Note- Big O notation works on worst case because that vo case hi sabse jyada time lega,to idea ye hota h ki minimum kitna bhi time le algo but atmost(worst case) itna to
 time legi hi legi.
 +++For practice got to interview bit+++
+*/
