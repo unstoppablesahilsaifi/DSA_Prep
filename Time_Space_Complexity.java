@@ -27,7 +27,7 @@ There are three types:
               time function.
 ● For example, swap() function has O(1) time complexity.
 
-For example, the following loop is O(1).
+For example, the following loop is O(1). */
 
 // Here c is a constant
 for (int i = 1; i <= c; i++)
@@ -35,8 +35,8 @@ for (int i = 1; i <= c; i++)
 // some O(1) expressions
 }
 
-++ Big O(n)-●	Time Complexity of a loop is considered as O(n) if the loop variables are incremented/decremented by a constant amount.
-            ●	For example following functions have O(n) time complexity.
+//++ Big O(n)-●	Time Complexity of a loop is considered as O(n) if the loop variables are incremented/decremented by a constant amount.
+//          ●	For example following functions have O(n) time complexity.
 
 // Here c is a positive integer constant
 for (int i = 1; i <= n; i += c)
@@ -49,8 +49,8 @@ for (int i = n; i > 0; i -= c)
 // some O(1) expressions
 }
 
-++ Big O(n^2)-●	Time complexity of nested loops is equal to the number of times the innermost statement is executed.
-           ●	For example, the following sample loops have O(n2) time complexity 
+//++ Big O(n^2)-●	Time complexity of nested loops is equal to the number of times the innermost statement is executed.
+//           ●	For example, the following sample loops have O(n2) time complexity 
 
 for (int i = 1; i <=n; i += c)
 {
@@ -60,7 +60,7 @@ for (int i = 1; i <=n; i += c)
     }
 }
 
-++ Big O(log n)- ●	Time Complexity of a loop is considered as O(Log n) if the loop variables are divided/multiplied by a constant amount.
+//++ Big O(log n)- ●	Time Complexity of a loop is considered as O(Log n) if the loop variables are divided/multiplied by a constant amount.
  
 for (int i = 1; i <=n; i *= c)
 {
@@ -74,11 +74,11 @@ for (int i = n; i > 0; i /= c)
 // some O(1) expressions
 }
 
-Note- ●	Binary Search has O(log n) time complexity.
+//Note- ●	Binary Search has O(log n) time complexity.
 
-++ BigO (log(log n))- ●	Time Complexity of a loop is considered as O(log(log n)) if the loop variables are reduced/increased exponentially by a constant amount.
+//++ BigO (log(log n))- ●Time Complexity of a loop is considered as O(log(log n)) if the loop variables are reduced/increased exponentially by a constant amount.
 
-●	Here c is a constant greater than 1
+//●	Here c is a constant greater than 1
 
 for (int i = 2; i <=n; i = pow(i, c))
 {
@@ -92,8 +92,8 @@ for (int i = n; i > 1; i = fun(i))
 // some O(1) expressions
 }
 
-++ BigO (n log n)- ●	Time Complexity of a loop is considered as O(n log n) if the inner loop variables are divided/multiplied by a constant amount and outer loop is
-                      executed for n times.
+//++ BigO (n log n)- ●	Time Complexity of a loop is considered as O(n log n) if the inner loop variables are divided/multiplied by a constant amount and outer loop is
+//                      executed for n times.
 
 
 function(int n)
