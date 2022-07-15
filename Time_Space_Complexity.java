@@ -103,4 +103,35 @@ for( j = 1 ; j <= n ; j * = 2 )
 print( “*” ) ;
 }
 
+**********************************************************************************************************************************************************************
+/*+ Apni kaksha
 
+Time Complexity
+
+Time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the input.
+Types of notations:
+
+1. O-notation: It is used to denote asymptotic upper bound. For a given function g(n), we denote it by O(g(n)). Pronounced as “big-oh of g of
+n”. It also known as worst case time complexity as it denotes the upper bound in which algorithm terminates.
+
+2. Ω-notation: It is used to denote asymptotic lower bound. For a given function g(n), we denote it by Ω(g(n)). Pronounced as “big-omega of
+g of n”. It also known as best case time complexity as it denotes the lower bound in which algorithm terminates.
+
+3. Θ-notation: It is used to denote the average time of a program.
+
+****Important Note***
+a. Best case - Suppose koi array h jisme linear search krna h like- 2,5,7,9,6,1
+   iske 2 search krna h, best case ye hoga ki suru m hi mil jaye, mtlb best case ye hua ki koi element jo search krna h vo suru m mil jaye iska mtlb content baat hui ki
+   bhai suru m hi milega agar best case h to, iska mtlb constent baat hui to iski complexity Ω(1) hui kyuki best case ko omega Ω s denote krte h.
+
+b. worst case ye hoga ki koi element last m mile yani k jitne element honge utni baar iterate krna pdega mtlb depends on size n, to complexity O(n) hogi kyuki worst
+   case ko O s denote krte h.
+   
+c. Average case- average case mtlb chances of comparison devided by no of cases. mtlb-> ho sakta h koi element 1 psotion pe mile ho sakta h 2 pe ho sakta h 3 pe and
+                 so on......
+                 (1+2+3+4+....+n)/n = [n(n+1)/2]/n = (n+1)/2  to complexity hui theta θ(n) kyuki value ya constent ko hm neglect krte h.
+                 
+ 
+            
+            
+            
