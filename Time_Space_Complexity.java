@@ -129,9 +129,38 @@ b. worst case ye hoga ki koi element last m mile yani k jitne element honge utni
    
 c. Average case- average case mtlb chances of comparison devided by no of cases. mtlb-> ho sakta h koi element 1 psotion pe mile ho sakta h 2 pe ho sakta h 3 pe and
                  so on......
-                 (1+2+3+4+....+n)/n = [n(n+1)/2]/n = (n+1)/2  to complexity hui theta θ(n) kyuki value ya constent ko hm neglect krte h.
-                 
+                 (1+2+3+4+....+n)/n = [n(n+1)/2]/n = (n+1)/2  to complexity hui theta θ(n) kyuki value ya constent ko hm neglect krte h. */
  
             
+for (int i = 1; i <= n; ++i) {
+  a=a+1;
+}                                // to yha per do loop h uper vale ki complexity n hoga and neche vale ki m to complete complexity O(n+m) hogi.
+ 
+  for(int j = 1; j <=m; ++j) {
+    a=a+1;
+  }
+                 
+// 2nd example
+
+for (int i = 1; i <= n; ++i) {
+  for(int j = 1; j <=m; ++j) {
+    a=a+rand();                  // iski TC hogi Big O(nm).
+  }
+}
+ 
+//3rd example
+for (int i = 1; i <= n; ++i) {
+  for(int j = 1; j <=m; ++j) {
+    a=a+rand();                  // iski TC hogi Big O(nm+n)
+  }
+}
+for (int i = 1; i <= n; ++i) {
+  a=a+1;
+}    
             
+ /* How to comapre 2 algorithms
+           n                   log n
+ n=1->     1 unit              0 coz log1 means o
+ n=2->     2                   1 coz log 2 base 2 means 1
+ n=1024->  1024                10  coz log 2^10 base 2
             
