@@ -160,7 +160,16 @@ for (int i = 1; i <= n; ++i) {
             
  /* How to comapre 2 algorithms
            n                   log n
- n=1->     1 unit              0 coz log1 means o
- n=2->     2                   1 coz log 2 base 2 means 1
- n=1024->  1024                10  coz log 2^10 base 2
-            
+ n=1->     1 unit time         0, coz log1 means o                        //logb 1 = 0, logb b = 1
+ n=2->     2                   1, coz log 2 base 2 means 1
+ n=1024->  1024                10,  coz log 2^10 base 2
+ */
+
+****************************************************************************************************************************************************************
+// For Practice
+// https://www.tutorialspoint.com/practice-questions-on-time-complexity-analysis-in-cplusplus
+// https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/
+
+
+
+
