@@ -172,3 +172,42 @@ for (int i = 1; i <= n; ++i) {
 // Very important -     https://www.geeksforgeeks.org/miscellaneous-problems-of-time-complexity/
 // https://www.codingninjas.com/codestudio/library/practice-questions-on-time-complexity-analysis-in-c
 
+/* What is the time, space complexity of following code :
+
+        int a = 0, b = 0;    
+        for (i = 0; i < N; i++) {
+            a = a + rand();  
+        }
+        for (j = 0; j < M; j++) {
+            b = b + rand();
+        }
+Assume that rand() is O(1) time, O(1) space function.
+
+Ans- O(N + M) time, O(1) space
+
+* What is the time, space complexity of following code :
+
+    int a = 0, b = 0;    
+    for (i = 0; i < N; i++) {
+        for (j = 0; j < N; j++) {
+            a = a + j;
+        }
+    }
+    for (k = 0; k < N; k++) {
+        b = b + k;
+    } 
+   
+   
+   Ans-O(N * N) time, O(1) space
+   
+   
+   * What is the time complexity of the following code :
+
+    int a = 0;
+    for (i = 0; i < N; i++) {
+        for (j = N; j > i; j--) {
+            a = a + i + j;
+        }
+    }
+    
+    Ans- O(N*N)
