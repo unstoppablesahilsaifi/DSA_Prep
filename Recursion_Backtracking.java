@@ -67,12 +67,12 @@ public static int summ(int n){
 Now as per the 3 rules
 1. If any number power is zero then the output would be 1. to hamara base case ye h ki jab bhi a ki power zero ho jaye to 1 return krdo
 2. Problem h hamari to find a^b and sub problem hui a^b-1
-//Leap of faith s ho rha h sab ye ki maan lo bhai 3 ki power 4 h to 3 ki power 3 uske saame rakh do relation bnane k liye
+//Leaf of faith s ho rha h sab ye ki maan lo bhai 3 ki power 4 h to 3 ki power 3 uske saame rakh do relation bnane k liye
    suppose 3^4(Ye nikalna h)        and        3^4-1(Ye dediya mtlb 3^3)
  Ab important baat suppose kro koi hmse khee ki agar m tumeh 3 ki power 3 dedu to 3 ki power 4 nikal doge?? m bolunga ha kyuki ek 3 ki or multiply krdo aa jayga result.
  3^4= 3^3 * 3
  
- 3. Ab krna h generalise(the relation) -> mtlb -> aap aap a^b nikalne k liye kya kroge a^b-1 k andar multiply krdo a ki(a^b = a^b-1 * a)
+ 3. Ab krna h generalise(the relation) -> mtlb -> ab aap a^b nikalne k liye kya kroge a^b-1 k andar multiply krdo a ki(a^b = a^b-1 * a)
     f(a,b)= f(a,b-1) * a
    */
 class GFG {
