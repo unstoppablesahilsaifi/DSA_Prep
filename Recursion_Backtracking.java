@@ -99,3 +99,32 @@ class GFG {
 O/P-8
     
 
+**************************************8
+/* 2nd video of anuj bhaiyaa
+Q-1 Find the number of ways in n*m matrix
+Ab suno bhai dyaan s, suppose ek matrix h   1  2  3
+                                            4  5  6
+                                            7  8  9
+                                            // hme isme 1 s 9 tak jana h, to kitne raste ho sakte h , pehla to ye ki 1 s 2 pe jao for 3 pe fir 6 fir 9, dusra ye ki 1 s 2
+                                            2 s 5, 5 s 6, 6 s 9 to aise kul 6 raaste ho sakte h, condition ye bn gai ki right or bottom m hi ja sakte h 
+                   
+                   2nd matrix example    1 2
+                                         3 4   // isme 1 s 4 tak jane k do raste h bs ya to 1 2 4 ya fir 1 3 4.
+                                         
+                   3rd matrix example    1 2
+                                         3 4
+                                         5 6
+                                         7 8  // isme total raste 4 h 1 s 8 tak jaane k, 1 2 4 6 8 ys fir 1 3 4 6 8 ya fir 1 3 5 6 8 ya fir 1 3 5 7 8
+                                         
+ Ab kaam ki baat suno-> suppose ek matrix h 1 2 3 or dusri matrix h 1
+                                                                    2  // isme base case ye hoga ki 1 s 3 tak jaane k ek hi raasta h chahe row ho ya column chahe row 
+                                                                    3  // k ref m kitne bhi col ho or col k ref m kitni bhi row ho rasta ek hi rhega mtlb answer ek hi hoga
+                                                                    
+MATRIX h   1  2  3  4
+           5  6  7  8     // find krna h ki 1 s 16 tak jaane ki kitne raaste h.
+           9 10 11 12
+           13 14 15 16
+                                                                    3
+Approach-> pehle base case bnana-> kisi bhi tarah s col 4 pe phuch gye to raste ek h hoga 4 s sidha 16 pe or agar kisi tarah row 13 pe phuch gye to bhi rasta ek hi bchega
+           13 s sidha 16
+                                         
