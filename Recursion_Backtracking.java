@@ -120,11 +120,17 @@ Ab suno bhai dyaan s, suppose ek matrix h   1  2  3
                                                                     2  // isme base case ye hoga ki 1 s 3 tak jaane k ek hi raasta h chahe row ho ya column chahe row 
                                                                     3  // k ref m kitne bhi col ho or col k ref m kitni bhi row ho rasta ek hi rhega mtlb answer ek hi hoga
                                                                     
-MATRIX h   1  2  3  4
-           5  6  7  8     // find krna h ki 1 s 16 tak jaane ki kitne raaste h.
-           9 10 11 12
-           13 14 15 16
+MATRIX h   1  2  3
+           4  5  6     // find krna h ki 1 s 12 tak jaane ki kitne raaste h.
+           7  8  9
+           10 11 12
                                                                     3
-Approach-> pehle base case bnana-> kisi bhi tarah s col 4 pe phuch gye to raste ek h hoga 4 s sidha 16 pe or agar kisi tarah row 13 pe phuch gye to bhi rasta ek hi bchega
-           13 s sidha 16
+Approach-> pehle base case bnana-> kisi bhi tarah s col 3 pe phuch gye to raste ek h hoga 3 s sidha 12 pe or agar kisi tarah row 10 pe phuch gye to bhi rasta ek hi bchega
+           10 s sidha 12
+           
+           n=4 (row)
+           m=3 (column)
+            ab agar hm kisi tarah row 10 per phuch gye to hmara portion reh jayga 1 2 3
+                                                                                  4 5 6    // pehli matrix tak n=4 tha but ab ho jayga row=n-1
+                                                                                  7 8 9
                                          
