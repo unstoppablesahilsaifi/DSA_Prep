@@ -130,7 +130,62 @@ Approach-> pehle base case bnana-> kisi bhi tarah s col 3 pe phuch gye to raste 
            
            n=4 (row)
            m=3 (column)
-            ab agar hm kisi tarah row 10 per phuch gye to hmara portion reh jayga 1 2 3
+       (1)     ab agar hm kisi tarah row 10 per phuch gye to hmara portion reh jayga 1 2 3
                                                                                   4 5 6    // pehli matrix tak n=4 tha but ab ho jayga row=n-1
-                                                                                  7 8 9
+                                                                                  7 8 9    // is condition k liye function hoga f(n,m)-> f(n-1,m)
                                          
+                                         
+       (2)    ab agar hm kisi tarah col 3 per phuch gye to hamara portion reh jayag 1  2
+                                                                                  4  5    //pehli matrix tak m=3 tha but ab ho jayga col=m-1
+                                                                                  7  8    // is condition k liye function hoga f(n,m)-> f(n,m-1)
+                                                                                  10 11
+           ab bhaiyaaa baat h important ki agar total no of way find krna h to condition bc kuch bhi ho sakti h to ek kaam kro dono ko plus krdo.
+           mtlb f(n,m)= f(n-1,m) + f(n,m-1)
+           */
+    
+           
+  ??ab dekho Code->
+    
+    int count(int n, int m)
+    {
+         if(n==1 || m==1)
+         {
+            return 1;
+         }
+    return count(n-1,m) + count(n,m-1)
+    }
+        
+
+Main code
+=>
+class GFG {
+ 
+    // Returns count of possible paths to reach
+    // cell at row number m and column number n
+    // from the topmost leftmost cell (cell at 1, 1)
+    static int numberOfPaths(int m, int n)
+    {
+        // If either given row number is first or
+        // given column number is first
+        if (m == 1 || n == 1)
+            return 1;
+ 
+        // If diagonal movements are allowed then
+        // the last addition is required.
+        return numberOfPaths(m - 1, n) + numberOfPaths(m, n - 1);
+        // + numberOfPaths(m-1, n-1);
+    }
+ 
+    public static void main(String args[])
+    {
+        System.out.println(numberOfPaths(3, 3));
+    }
+}
+ 
++++++++++++
+Q-2,
+                                         
+       
+       
+       
+       
