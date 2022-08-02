@@ -182,8 +182,33 @@ class GFG {
     }
 }
  
-+++++++++++
-/* Q-2,
+++++++++++++++++++
+/* Q-2 String palindrome check.
+Analysis-> Suuppose there is a string ababa, that is plaindrome because if we reverse this the output will be same.
+          what we can do is-> check if first and last is same then move to f+1 and l-1, now the pointer would be at bb, again check f and l is same,yes it is same,
+          then again f+1 and l-1 now the pointer would be at middle one a or jab ye f and l same location per phuch jaynge to hme pta chal jayga ki charachter ek or same h.
+          means palindrome number h.
+          */
+          
+// Lets take an code example for abba
+// https://www.youtube.com/watch?v=mEBEw_xScsE&list=PLUcsbZa0qzu3yNzzAxgvSgRobdUUJvz7p&index=10&t=94s
+   boolean isPalin(String s, int f, int l)
+        {
+           if(l>=r)
+           {
+               return true;
+           }                      //complexity hogi BigO(n), kyuki har character ko ek baar to check kr hi rhe ho.
+           if(s[f]!=s[l])
+           {
+               return false;
+           }
+         return isPalin(s, f+1, l-1)
+             
+    }
+    
+
+
+
                                          
        
        
