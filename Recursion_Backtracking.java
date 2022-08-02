@@ -258,7 +258,10 @@ Enter the String for check:
 cocoococ
 cocoococ is a palindrome
 
-                                         
+         
++++++++++++++++++++++++++++++
+/* Q-3 Print powerset of a sting ex-> abc=> {" ",a,b,c,ab,bc,ac,abc}
+
        
        
        
