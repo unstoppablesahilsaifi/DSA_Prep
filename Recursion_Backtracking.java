@@ -260,7 +260,24 @@ cocoococ is a palindrome
 
          
 +++++++++++++++++++++++++++++
-/* Q-3 Print powerset of a sting ex-> abc=> {" ",a,b,c,ab,bc,ac,abc}
+By Apna College
+// Program to print number
+public class Main
+{
+    public static void pn(int n){
+        if(n==0){
+            return;
+        }
+        System.out.println(n);
+        pn(n-1);
+    }
+	public static void main(String[] args) {
+	    int n=5;
+		pn(n);
+	}
+}
+O/P- 5 4 3 2 1
+
 
        
        
