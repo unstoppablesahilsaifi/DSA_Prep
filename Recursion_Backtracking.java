@@ -299,6 +299,23 @@ public class Main
 }
 
        
-       
-       
-       
+ /* Print factorial of a number.
+   Ab bhai baat suno, suppose 5! find krna h to 5! ko hm 5 * 4! bhi likh sakte h, right?? mtlb scene ye h ki suppose kro n! find krna h to hm kaise bhi (n-1)! nikal le
+   or usme n ki multiply krde jaise ki n!= n* (n-1)!   ====> 5!=5*4!    right????????
+   Base case hmara yhi rhega ki n==1 ho jata h to O/P bhi 1 rhega.
+   */
+   
+   class FactorialExample2{  
+ static int factorial(int n){    
+  if (n == 0)    
+    return 1;    
+  else    
+    return(n * factorial(n-1));    
+ }    
+ public static void main(String args[]){  
+  int i,fact=1;  
+  int number=4;//It is the number to calculate factorial    
+  fact = factorial(number);   
+  System.out.println("Factorial of "+number+" is: "+fact);    
+ }  
+}  
