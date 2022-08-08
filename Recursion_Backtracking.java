@@ -278,6 +278,25 @@ public class Main
 }
 O/P- 5 4 3 2 1
 
+// Program to find the sum of n natural number.
+	
+public class Main
+{
+    public static void printsum(int i, int n, int sum){
+        if(i==n){
+            sum=sum+i;
+          sout(sum);
+	   return;
+        }
+        sum=sum+i
+	printsum(i+1,n,sum);
+    }
+	public static void main(String[] args) {
+	   
+		printsum(1,5,0); // yaha per i=1 kyuki number 1 s startho rhe h or 5 mtlb 5 tak k number ka sum krna h and sum ko 0 se init krna pdega taki garbage val na de
+		
+	}
+}
 
        
        
