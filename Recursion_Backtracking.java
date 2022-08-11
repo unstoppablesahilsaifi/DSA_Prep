@@ -333,7 +333,8 @@ public class Fibo
             int c=a+b;  // ye hmari 3rd term ho gai
 
       System.out.println(c);
-      fib(b,c,n-1); // ab yha p 0 and 1 to print ho chuka tha isliye ab b treat hoga a ki tarah and c treat hoga b ki tarah
+      fib(b,c,n-1); // ab yha p 0 and 1 to print ho chuka tha isliye ab b treat hoga a ki tarah and c treat hoga b ki tarah, or n-1 isliye kyuki is statement p ek
+		    // value to print ho gai na.
 	}
 	public static void main(String args[])
 	{
@@ -345,5 +346,12 @@ public class Fibo
 		fib(a,b,n-2); // n-2 isliye paas hua kuki suru ki 0 and 1 to print hmne kr diya to jitna n h usse n-2 to ho gya na
 	}
 }
+
+
+
+// print a String in reverse
+
+
+
 
 
