@@ -319,3 +319,31 @@ public class Main
   System.out.println("Factorial of "+number+" is: "+fact);    
  }  
 }  
+
+
+
+// Print fibonacchi series using recursion
+public class Fibo
+{
+	public static void fib(int a , int b, int n){
+      if(n==0)
+      {
+      	return;
+      }
+            int c=a+b;  // ye hmari 3rd term ho gai
+
+      System.out.println(c);
+      fib(b,c,n-1); // ab yha p 0 and 1 to print ho chuka tha isliye ab b treat hoga a ki tarah and c treat hoga b ki tarah
+	}
+	public static void main(String args[])
+	{
+		int a=0;
+		int b=1;
+		System.out.println(a);
+		System.out.println(b);
+		int n=7;
+		fib(a,b,n-2); // n-2 isliye paas hua kuki suru ki 0 and 1 to print hmne kr diya to jitna n h usse n-2 to ho gya na
+	}
+}
+
+
