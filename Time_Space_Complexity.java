@@ -1,4 +1,4 @@
-// From Anuj Bhaiyya Youtube Channel
+// From Anuj Bhaiyya Youtube Channel(tutorial)
 /* Time Complexity- Time taken by an algorithm as a function of the length of input.
 a. f(n)=3n^2+5n -> Ingnore constants and focus on the maximum power then time complexity would be-> Big O(n^2)
 b. f(n)=n+100log n -> n is greater beacuse if we make the graph of this function log n will always below the n it would be downgrading graph so TC would be Big O(n).
